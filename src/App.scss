@@ -1,0 +1,74 @@
+.main {
+  display: flex;
+  margin-top: 20px;
+}
+
+.employees {
+  flex: 3;
+  &__h1{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 1px solid black;
+    margin-right: 40px;
+    &__card {
+      margin-left: 10px;
+      padding: 10px;
+      width: 200px;
+      &--h1 {
+        margin-bottom: 5px;
+      }
+    }
+    &__box {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      &__container{
+        display:flex;
+        justify-content: center;
+        
+      }
+
+      &__input {
+        margin-right: 50px;
+      }
+      
+
+      &__checked::after {
+        content: "Check box";
+        position: absolute;
+        right: 0;
+
+        font-size: 9px;
+      }
+    }
+  }
+}
+
+.employeesbirthday {
+  flex: 1,5;
+  min-width: 400px;
+  &__box {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    &__h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__list {
+    &__li {
+      margin-left: 20px;
+    }
+    &--year--titile{
+      margin: 20px 0 20px 0 ;
+    }
+  }
+  
+}
